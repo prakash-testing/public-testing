@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Suite1]" parallel="classes">
+  <test thread-count="1" verbose="0" name="WebDriver(failed)" parallel="classes">
+    <classes>
+      <class name="testNG.Module7_Assignment_SE_Grid">
+        <methods>
+          <include name="logout"/>
+          <include name="bing"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- testNG.Module7_Assignment_SE_Grid -->
+    </classes>
+  </test> <!-- WebDriver(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
