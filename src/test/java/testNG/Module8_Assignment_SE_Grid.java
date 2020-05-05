@@ -27,7 +27,7 @@ public class Module8_Assignment_SE_Grid {
 		//DesiredCapabilities cap = DesiredCapabilities.chrome();
 
 		//driver = new RemoteWebDriver(new URL("http://ec2-13-233-158-140.ap-south-1.compute.amazonaws.com:4444/wd/hub"), cap);
-		driver = new RemoteWebDriver(new URL("http://172.16.0.14:4444/wd/hub"), cap);
+		driver = new RemoteWebDriver(new URL("http://devops-slave1.ppatel.tech:4444/wd/hub"), cap);
 		driver.get("http://172.16.0.14:81/index.html");
 		//driver.get("https://www.google.com/search?q=Intellipaat");
 		driver.manage().window().maximize();
