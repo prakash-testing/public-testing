@@ -1,9 +1,11 @@
 node {
     stage('Build') {
 		if (env.BRANCH_NAME == 'master') {
+			checkout scm
 			echo 'Runnig SE Grid Job'
 			build 'selenium_grid_docker'
 		} else {
+			checkout scm
 			echo 'Runnig SE Grid Job'
 			build 'selenium_grid_docker'
 		}
@@ -25,3 +27,4 @@ node {
    }
    
 }
+
