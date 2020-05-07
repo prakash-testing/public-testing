@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             agent any
             steps {
-		checkout scm
+				checkout scm
 			}
 		}
         stage('Test') {
@@ -18,9 +18,14 @@ pipeline {
         }
         stage('Deploy') {
 		agent any
-		when {branch 'master'}
-        	steps {
-		    sh 'echo env.BRANCH_NAME'	
+		//when {branch 'master'}
+		when {
+			expression {
+				return env.GIT_BRANCH == "origin/master"
+			}
+		}			 
+            	steps {
+		    sh 'echo Hi Br is:- ${env.BRANCH_NAME}'
                     echo 'Runnig Production Push as its master branch commit'
                     build 'prod_push'
             	}
