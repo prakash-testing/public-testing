@@ -21,6 +21,7 @@ pipeline {
             steps {
                 script {
                     if (env.BRANCH_NAME == 'master') {
+			sh 'echo env.BRANCH_NAME'
                         echo 'Runnig Production Push as its master branch commit'
                         build 'prod_push'
                     }
