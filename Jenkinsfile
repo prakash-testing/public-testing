@@ -25,7 +25,7 @@ pipeline {
 				}
 			}
 			steps {
-				sh 'echo Hi Br is:- ${env.BRANCH_NAME}'
+				//sh 'echo Hi Br is:- ${env.BRANCH_NAME}'
 				sh 'echo Hi Br is:- ${env.GIT_BRANCH}'
 				echo 'Runnig Production Push as its master branch commit'
 				build 'prod_push'
