@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
 		agent any
-		when {branch 'master'}
+		//when {branch 'master'}
         	steps {
 		    sh 'echo env.BRANCH_NAME'	
                     echo 'Runnig Production Push as its master branch commit'
