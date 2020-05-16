@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite1" parallel="classes" thread-count="1">
-<test name="WebDriver">
-<classes>
-<class name="testNG.Module8_Assignment_SE_Grid"/>
-</classes>
-</test>
-</suite>
-
